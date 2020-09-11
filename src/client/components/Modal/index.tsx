@@ -6,23 +6,16 @@ import styles from './Modal.m.sass'
 interface Props {
   className?: string
   isOpen: boolean
-  onRequestClose: () => void
-  position?: 'top' | 'center'
+  onClose: () => void
 }
 
-const Modal: React.FC<Props> = ({
-  children,
-  className,
-  isOpen,
-  onRequestClose,
-  position = 'center'
-}) => {
+const Modal: React.FC<Props> = ({ children, className, isOpen, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
   const close = () => {
-    if (onRequestClose) {
-      onRequestClose()
+    if (onClose) {
+      onClose()
     }
   }
 
@@ -55,7 +48,7 @@ const Modal: React.FC<Props> = ({
   return (
     <Portal>
       {isOpen && (
-        <div className={cx(styles.modal, styles[position], className)}>
+        <div className={cx(styles.modal, className)}>
           <div className={styles.modalBackground} />
           <div className={styles.modalContainer} ref={modalRef}>
             {children}

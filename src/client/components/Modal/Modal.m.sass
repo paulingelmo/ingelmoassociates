@@ -3,6 +3,7 @@
 .modal
   display: flex
   justify-content: center
+  align-items: center
   position: fixed
   top: 0px
   bottom: 0px
@@ -11,11 +12,7 @@
   overflow: hidden
   overflow-y: auto
   z-index: 100
-  &.top
-    align-items: flex-start
-  &.center
-    align-items: center
-
+    
 .modalBackground
   position: fixed
   top: 0px
@@ -27,7 +24,6 @@
 .modalContainer
   position: relative
   overflow: visible
-  //min-width: 768px
 
 .modalButton
   @include button

@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <Panel>
           <div className={styles.contactContainer}>
             <h4>Contact Us</h4>
