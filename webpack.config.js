@@ -73,7 +73,7 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|jpe?g|png|svg)$/i,
         use: [{ loader: 'url-loader', options: { limit: 8000 } }]
       },
       // Favicon
