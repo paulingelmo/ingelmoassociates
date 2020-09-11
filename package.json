@@ -1,10 +1,10 @@
 {
-  "name": "ingelmo.biz",
-  "description": "The website for Ingelmo Associates.",
+  "name": "ingelmoassociates",
+  "description": "The Ingelmo Associates website.",
   "author": "Paul N. Ingelmo",
   "keywords": [],
-  "license": "ISC",
-  "version": "1.0.0",
+  "license": "MIT",
+  "version": "0.1.0",
   "main": "dist/bin/www.js",
   "scripts": {
     "build": "npm run build-client && npm run build-server",
@@ -13,7 +13,7 @@
     "build-server": "babel 'src/server' -d dist/server",
     "dev-": "nodemon src/server/bin/www.ts --watch src/server",
     "dev": "webpack-dev-server --hot",
-    "start": "node dist/server/bin/www.js"
+    "start": "node dist/server/bin/www.ts"
   },
   "dependencies": {},
   "devDependencies": {
