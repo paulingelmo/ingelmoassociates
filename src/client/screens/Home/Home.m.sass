@@ -1,0 +1,218 @@
+@import 'sass/variables'
+  
+.homePage
+  position: relative
+  background-color: $white
+
+.content
+
+.contentContainer
+  min-height: calc(100vh - #{$footerHeight})
+  padding-top: $headerHeight
+
+.landing
+
+.landingContainer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: 700px
+  margin: 0px -20px
+  background: url('../../images/bridge-light.jpg') center / cover no-repeat
+
+.landingContent
+  flex: 1 1 0
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  h1
+    @include h1
+    max-width: 550px
+    // color: $white
+
+  p
+    @include p
+    max-width: 450px
+
+.landingImage
+  flex: 1 1 0
+
+.clients
+  margin: 0px -20px 70px
+  padding: 45px 20px
+  background-color: $lightGrey
+
+.clientsContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  margin: -15px 0px
+
+.clientLogo
+  padding: 15px 30px
+
+  img
+    max-height: 100px
+    // filter: opacity(0.5)
+
+.personal
+  padding: 70px 0px
+
+.personalContainer
+  display: flex
+  justify-content: center
+  align-items: center
+
+.personalContent
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 3px
+  padding: 30px 45px
+  background-color: lighten($iaRed, 45)
+
+  h4
+    @include h4
+    max-width: 525px
+    line-height: 32px
+    font-weight: 300
+
+.titleLine
+  flex: 1 1 0
+  width: 100%
+  height: 7px
+  margin: 0px 30px
+  background-color: $iaRed
+
+.services
+  padding: 70px 0px
+
+.servicesContainer
+
+.servicesTitle
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h2
+    @include h2
+    flex: 0 0 auto
+    text-align: center
+
+.servicesIcons
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+  padding-top: 70px
+
+.servicesIcon
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  margin: 0px 30px
+
+  .icon
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100px
+
+    img
+      width: 60px
+      // filter: grayscale(1)
+      z-index: 1
+
+  .iconBackground
+    position: absolute
+    border-radius: 50%
+    z-index: 0
+    
+    &.white
+      width: 100px
+      height: 100px
+      background-color: $white
+    &.red
+      width: 110px
+      height: 110px
+      background-color: lighten($iaRed, 45)
+
+  .text
+    max-width: 150px
+    margin: 0px auto
+    padding-top: 10px
+
+    h4
+      @include h4
+      font-size: 18px
+      text-align: center
+
+.servicesList
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  // margin: 0px -30px
+  padding-top: 35px
+
+.listItem
+  max-width: 350px
+  margin: 0px 30px
+
+  p
+    @include p
+
+.about
+  padding: 70px 0px
+
+.aboutContainer
+
+.aboutTitle
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h2
+    @include h2
+    flex: 0 0 auto
+    text-align: center
+
+.aboutCompany
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  // margin: 0px -30px
+  padding-top: 70px
+
+.companyItem
+  max-width: 350px
+  margin: 0px 30px
+
+  p
+    @include p
+
+.location
+  padding: 70px 0px 35px
+
+.locationContainer
+
+.locationTitle
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h2
+    @include h2
+    flex: 0 0 auto
+    text-align: center
+
+.map
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0px 30px
+  padding-top: 70px

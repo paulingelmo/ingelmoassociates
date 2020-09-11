@@ -1,0 +1,88 @@
+@import 'sass/variables'
+
+@keyframes switchIncrease
+  0%
+    transform: translateX(150px)
+    opacity: 0
+  100%
+    transform: translateX(0px)
+    opacity: 1
+
+@keyframes switchDecrease
+  0%
+    transform: translateX(-150px)
+    opacity: 0
+  100%
+    transform: translateX(0px)
+    opacity: 1
+    
+.project
+  position: relative
+  top: 0px
+  margin: 15px 30px
+  border-radius: 3px
+  box-shadow: 0px 5px 20px rgba($black, 0.1)
+  overflow: hidden
+  transition: all 0.25s
+  cursor: pointer
+  &:hover
+    top: -3px
+
+  p
+    @include p
+    padding: 15px 15px
+
+.projectImage
+  width: 300px
+  height: 200px
+  background: center / cover no-repeat
+
+.modalPanel
+  position: relative
+
+.modalImageContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border-radius: 3px
+  overflow: hidden
+  &.increase
+    animation: switchIncrease 0.25s ease-in-out 1
+  &.decrease
+    animation: switchDecrease 0.25s ease-in-out 1
+
+  p
+    @include p
+    width: 100%
+    padding: 15px 15px
+    background-color: $white  
+
+.modalImage
+  max-width: calc(100vw - 180px)
+  min-width: 50vw
+  max-height: calc(100vh - 180px)
+
+.modalArrow
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  top: calc(50% - 25px)
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  font-size: 32px
+  font-weight: 600
+  color: $white
+  background-color: $black
+  transition: all 0.25s
+  cursor: pointer
+  user-select: none
+  overflow: hidden
+  &.left
+    left: -80px
+  &.right
+    right: -80px
+  &:hover
+    background-color: $iaRed

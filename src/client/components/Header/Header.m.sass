@@ -1,0 +1,43 @@
+@import 'sass/variables'
+  
+header
+  position: fixed
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  height: $headerHeight
+  padding-left: $layoutPadding
+  padding-right: $layoutPadding
+  background-color: $white
+  z-index: 2
+
+.logo
+  max-width: 125px
+
+.actions
+  a
+    color: $black
+    text-decoration: none
+    &.active
+      display: none
+    &:not(:last-child)
+      margin-right: 20px
+  button
+    @include button
+
+.contactContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  h3
+    @include h3
+
+  h4
+    @include h4
+  
+  p
+    @include p
+    padding-top: 30px
