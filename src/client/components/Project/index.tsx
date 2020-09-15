@@ -32,7 +32,7 @@ const Project: React.FC<{ project: Project }> = ({ project }) => {
 
   return (
     <>
-      <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <div className={styles.modalPanel}>
           <div className={cx(styles.modalImageContainer, styles[updateType])}>
             <img

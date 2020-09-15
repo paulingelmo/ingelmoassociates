@@ -1,0 +1,39 @@
+@import 'sass/variables'
+
+.textColumns
+
+.textColumnsContainer
+  display: flex
+  justify-content: center
+  align-items: stretch
+
+.textColumn
+  display: flex
+  flex-direction: column
+  max-width: 350px
+  margin: 0px 30px
+  border-radius: 3px
+  overflow: hidden
+  &:nth-child(1)
+    .textBox
+      background-color: lighten($iaRed, 45)
+  
+  &:nth-child(2)
+    .textBox
+      background-color: lighten($iaRed, 40)
+
+  &:nth-child(3)
+    .textBox
+      background-color: lighten($iaRed, 35)
+
+.imageBox
+  width: 100%
+  height: 250px
+  background: center / cover no-repeat
+
+.textBox
+  flex: 1 1 0
+  padding: 15px 15px
+
+  p
+    @include p

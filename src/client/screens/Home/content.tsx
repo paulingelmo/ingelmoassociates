@@ -64,7 +64,7 @@ export const servicesIcons = [
 
 export const servicesItems = [
   {
-    source: '',
+    source: 'images/clients/projects/um/um_1.jpg',
     description: (
       <p>
         Ingelmo Associates has the expertise and resources to support a broad
@@ -78,7 +78,7 @@ export const servicesItems = [
     )
   },
   {
-    source: '',
+    source: 'images/clients/projects/palms/palms_1.jpg',
     description: (
       <p>
         We can take a project expertly and efficiently from concept through
@@ -88,7 +88,7 @@ export const servicesItems = [
     )
   },
   {
-    source: '',
+    source: 'images/clients/projects/cg/cg_1.jpg',
     description: (
       <p>
         Ingelmo Associates’ portfolio includes work performed for clients that
@@ -104,6 +104,7 @@ export const servicesItems = [
 
 export const companyItems = [
   {
+    source: '',
     description: (
       <p>
         Ingelmo Associates is a 100% Hispanic-owned multi-disciplinary
@@ -114,6 +115,7 @@ export const companyItems = [
     )
   },
   {
+    source: '',
     description: (
       <p>
         Our firm is committed to quality work and successful outcomes. We focus
@@ -125,6 +127,7 @@ export const companyItems = [
     )
   },
   {
+    source: '',
     description: (
       <p>
         Our Coral Gables office is centrally located, offering easy access to

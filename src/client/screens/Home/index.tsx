@@ -1,6 +1,7 @@
 import React from 'react'
 import cx from 'classnames'
 import Layout from 'components/Layout'
+import TextColumns from 'components/TextColumns'
 import {
   clientLogos,
   servicesIcons,
@@ -78,11 +79,7 @@ const Home: React.FC = () => {
                   ))}
                 </div>
                 <div className={styles.servicesList}>
-                  {servicesItems.map((item, index) => (
-                    <div className={styles.listItem} key={index}>
-                      {item.description}
-                    </div>
-                  ))}
+                  <TextColumns items={servicesItems} />
                 </div>
               </div>
             </div>
@@ -95,11 +92,7 @@ const Home: React.FC = () => {
                   <div className={styles.titleLine} />
                 </div>
                 <div className={styles.aboutCompany}>
-                  {companyItems.map((item, index) => (
-                    <div className={styles.companyItem} key={index}>
-                      {item.description}
-                    </div>
-                  ))}
+                  <TextColumns items={companyItems} />
                 </div>
               </div>
             </div>
