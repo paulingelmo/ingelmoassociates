@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 import styles from './TextColumns.m.sass'
 
 interface TextColumnsProps {
@@ -6,9 +7,13 @@ interface TextColumnsProps {
     source: string
     description: React.ReactNode
   }[]
+  inverted?: boolean
 }
 
-const TextColumns: React.FC<TextColumnsProps> = ({ items }) => {
+const TextColumns: React.FC<TextColumnsProps> = ({
+  items,
+  inverted = false
+}) => {
   return (
     <div className={styles.textColumns}>
       <div className={styles.textColumnsContainer}>
@@ -21,7 +26,9 @@ const TextColumns: React.FC<TextColumnsProps> = ({ items }) => {
                   backgroundImage: item.source ? `url(${item.source})` : 'none'
                 }}
               />
-              <div className={styles.textBox}>{item.description}</div>
+              <div className={cx(styles.textBox, inverted && styles.inverted)}>
+                {item.description}
+              </div>
             </div>
           ) : null
         })}

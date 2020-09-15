@@ -16,15 +16,19 @@
   overflow: hidden
   &:nth-child(1)
     .textBox
-      background-color: lighten($iaRed, 45)
-  
+      background-color: lighten($iaRed, 50)
+      &.inverted
+        background-color: lighten($iaRed, 40)
   &:nth-child(2)
     .textBox
-      background-color: lighten($iaRed, 40)
-
+      background-color: lighten($iaRed, 45)
+      &.inverted
+        background-color: lighten($iaRed, 45)
   &:nth-child(3)
     .textBox
-      background-color: lighten($iaRed, 35)
+      background-color: lighten($iaRed, 40)
+      &.inverted
+        background-color: lighten($iaRed, 50)
 
 .imageBox
   width: 100%

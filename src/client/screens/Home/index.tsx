@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                   <div className={styles.titleLine} />
                 </div>
                 <div className={styles.aboutCompany}>
-                  <TextColumns items={companyItems} />
+                  <TextColumns items={companyItems} inverted />
                 </div>
               </div>
             </div>
