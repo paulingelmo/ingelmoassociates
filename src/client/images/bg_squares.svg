@@ -68,7 +68,7 @@
       </g>
     </pattern>
     <pattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'>
-      <g fill='#F60'>
+      <g fill='#ffffff'>
         <use href='#s' x='2' y='5'/>
         <use href='#s' x='16' y='38'/>
         <use href='#s' x='46' y='42'/>
@@ -76,14 +76,14 @@
       </g>
     </pattern>
     <pattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'>
-      <g fill='#F60'>
+      <g fill='#ffffff'>
         <use href='#s' x='33' y='13'/>
         <use href='#s' x='27' y='54'/>
         <use href='#s' x='55' y='55'/>
       </g>
     </pattern>
     <pattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'>
-      <g fill='#F60'>
+      <g fill='#ffffff'>
         <use href='#s' x='11' y='8'/>
         <use href='#s' x='51' y='13'/>
         <use href='#s' x='17' y='73'/>

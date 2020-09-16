@@ -2,12 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import Layout from 'components/Layout'
 import TextColumns from 'components/TextColumns'
-import {
-  clientLogos,
-  servicesIcons,
-  servicesItems,
-  companyItems
-} from './content'
+import { clientLogos, servicesIcons, servicesItems } from './content'
 import styles from './Home.m.sass'
 
 const Home: React.FC = () => {
@@ -19,8 +14,11 @@ const Home: React.FC = () => {
             <div className={styles.landing}>
               <div className={styles.landingContainer}>
                 <div className={styles.landingContent}>
-                  {/* <h1>Ingelmo Associates, P.A.</h1> */}
-                  {/* <p>Description</p> */}
+                  <h3>Experience, Expertise, and Resources</h3>
+                  <p>
+                    <strong>Ingelmo Associates</strong> can support a broad
+                    range of design and engineering services.
+                  </p>
                 </div>
               </div>
             </div>
@@ -38,22 +36,18 @@ const Home: React.FC = () => {
             <div className={styles.personal}>
               <div className={styles.personalContainer}>
                 <div className={styles.personalContent}>
-                  <h4>
-                    Paul Ingelmo, P.E., the principal and owner of Ingelmo
-                    Associates, has a successful and long history in all aspects
-                    of Civil and Structural Engineering. Prior to Ingelmo
-                    Associates, he was a principal in engineering disciplines at
-                    two established South Florida consulting firms. Mr. Ingelmo
-                    is registered in a number of states, including Florida and
-                    California. Additionally, he is a Florida certified general
-                    contractor, a Florida special inspector and a Florida
-                    certified structural plans examiner.
-                  </h4>
+                  <h3>
+                    Ingelmo Associates is a 100% Hispanic-owned
+                    multi-disciplinary structural and engineering consulting
+                    firm based in Coral Gables, Florida. We have a proven record
+                    of more than 30 years of work completed on time and on
+                    budget for an extensive list of satisfied clients.
+                  </h3>
                 </div>
               </div>
             </div>
 
-            <div className={styles.services}>
+            <div className={styles.services} id="services">
               <div className={styles.servicesContainer}>
                 <div className={styles.servicesTitle}>
                   <div className={styles.titleLine} />
@@ -84,7 +78,7 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.about}>
+            <div className={styles.about} id="about">
               <div className={styles.aboutContainer}>
                 <div className={styles.aboutTitle}>
                   <div className={styles.titleLine} />
@@ -92,7 +86,27 @@ const Home: React.FC = () => {
                   <div className={styles.titleLine} />
                 </div>
                 <div className={styles.aboutCompany}>
-                  <TextColumns items={companyItems} inverted />
+                  <div className={styles.aboutImage}>
+                    <img src={'images/img_paul.png'} />
+                  </div>
+                  <div className={styles.aboutText}>
+                    <p>
+                      Paul Ingelmo, P.E., the principal and owner of Ingelmo
+                      Associates, has a successful and long history in all
+                      aspects of Civil and Structural Engineering. Mr. Ingelmo
+                      is registered in a number of states, including Florida and
+                      California. Additionally, he is a Florida certified
+                      general contractor, a Florida special inspector and a
+                      Florida certified structural plans examiner.
+                    </p>
+                    <p>
+                      We are committed to quality work and successful outcomes.
+                      We focus on providing personal attention and being
+                      responsive to our clients' needs and expectations. Ingelmo
+                      Associates’ repeat business and volume of referrals speaks
+                      to our customer-centered approach.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,6 +117,13 @@ const Home: React.FC = () => {
                   <div className={styles.titleLine} />
                   <h2>LOCATION</h2>
                   <div className={styles.titleLine} />
+                </div>
+                <div className={styles.locationText}>
+                  <p>
+                    Our Coral Gables office is centrally located, offering easy
+                    access to work throughout the South Florida area. We look
+                    forward to assisting you with your engineering needs.
+                  </p>
                 </div>
                 <div className={styles.map}>
                   <iframe

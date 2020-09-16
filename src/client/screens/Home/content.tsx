@@ -67,13 +67,8 @@ export const servicesItems = [
     source: 'images/clients/projects/um/um_1.jpg',
     description: (
       <p>
-        Ingelmo Associates has the expertise and resources to support a broad
-        range of design and engineering services. Our practice covers a wide
-        spectrum of experience and knowledge in areas that extend from
-        municipal/governmental work to industrial, commercial, residential, and
-        historic restoration endeavors. We provide comprehensive expertise in
-        the design of new facilities, as well as extensive renovation and
-        remodeling projects, inspections, and assessments.
+        Our practice extends from municipal/governmental work to industrial,
+        commercial, residential, and historic restoration endeavors.
       </p>
     )
   },
@@ -91,48 +86,11 @@ export const servicesItems = [
     source: 'images/clients/projects/cg/cg_1.jpg',
     description: (
       <p>
-        Ingelmo Associates’ portfolio includes work performed for clients that
-        include: U.S. Department of Defense, Miami-Dade County, Miami-Dade
-        County Public Schools, University of Miami, Miami International Airport,
-        FPL, City of Coral Gables, other municipalities, and commercial clients
-        such as Starbucks and Simon Properties, in addition to numerous
-        residential projects in the tri-county area and beyond.
-      </p>
-    )
-  }
-]
-
-export const companyItems = [
-  {
-    source: 'images/img_paul.jpg',
-    description: (
-      <p>
-        Ingelmo Associates is a 100% Hispanic-owned multi-disciplinary
-        structural and engineering consulting firm based in Coral Gables,
-        Florida. We have a proven record of more than 30 years of work completed
-        on time and on budget for an extensive list of satisfied clients.
-      </p>
-    )
-  },
-  {
-    source: 'images/img_ileana.jpg',
-    description: (
-      <p>
-        Our firm is committed to quality work and successful outcomes. We focus
-        on building positive relationships with our clients by providing
-        personal attention and being responsive to their needs and expectations.
-        Ingelmo Associates’ repeat business and volume of referrals speaks to
-        our expertise, professionalism, and customer-centered approach.
-      </p>
-    )
-  },
-  {
-    source: 'images/clients/projects/cg/cg_1.jpg',
-    description: (
-      <p>
-        Our Coral Gables office is centrally located, offering easy access to
-        work throughout the South Florida area. We look forward to assisting you
-        with your engineering needs.
+        Our portfolio includes work performed for clients such as the U.S.
+        Department of Defense, Miami-Dade County, University of Miami, Miami
+        International Airport, FPL, City of Coral Gables, other municipalities,
+        Starbucks, Simon Properties, and residential projects in the tri-county
+        area and beyond.
       </p>
     )
   }

@@ -14,27 +14,36 @@
 
 .landingContainer
   display: flex
-  justify-content: space-between
-  align-items: center
+  justify-content: flex-start
+  align-items: flex-end
   min-height: 700px
   margin: 0px -20px
   background: url('../../images/bridge-light.jpg') center / cover no-repeat
 
 .landingContent
-  flex: 1 1 0
   display: flex
   justify-content: center
-  align-items: center
+  align-items: flex-start
   flex-direction: column
+  margin: 30px 30px
+  padding: 35px 45px
+  background: rgba($black, 0.5)
 
-  h1
-    @include h1
+  h3
+    @include h3
     max-width: 550px
-    // color: $white
+    font-weight: 500
+    text-transform: uppercase
+    color: $white
 
   p
     @include p
     max-width: 450px
+    padding-top: 20px
+    color: $white
+
+  strong
+    font-weight: 500
 
 .landingImage
   flex: 1 1 0
@@ -71,13 +80,13 @@
   justify-content: center
   align-items: center
   border-radius: 3px
-  padding: 30px 45px
+  padding: 45px 60px
   background-color: lighten($iaRed, 45)
 
-  h4
-    @include h4
-    max-width: 525px
-    line-height: 32px
+  h3
+    @include h3
+    max-width: 625px
+    line-height: 38px
     font-weight: 300
 
 .titleLine
@@ -176,8 +185,31 @@
 .aboutCompany
   display: flex
   justify-content: center
-  align-items: flex-start
+  align-items: stretch
   padding-top: 70px
+
+.aboutImage
+  flex: 1 1 0
+  display: flex
+  justify-content: center
+  align-items: center
+  box-shadow: 15px 15px 30px 30px $white inset
+  background: url('../../images/bg_squares.svg') center / cover no-repeat
+
+  img
+    max-height: 500px
+
+.aboutText
+  flex: 1 1 0
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  p
+    @include p
+    max-width: 500px
+    padding-bottom: 20px
 
 .location
   padding: 70px 0px 35px
@@ -194,9 +226,20 @@
     flex: 0 0 auto
     text-align: center
 
+.locationText
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 35px
+
+  p
+    @include p
+    max-width: 600px
+    text-align: center
+
 .map
   display: flex
   justify-content: center
   align-items: center
   margin: 0px 30px
-  padding-top: 70px
+  padding-top: 35px
