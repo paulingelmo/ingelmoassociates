@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from 'components/Layout'
 import Project from 'components/Project'
 import { projectList } from './content'
-import styles from './Clients.m.sass'
+import styles from './Portfolio.m.sass'
 
 export interface Project {
   name: string
@@ -13,10 +13,10 @@ export interface Project {
   }[]
 }
 
-const Clients: React.FC = () => {
+const Portfolio: React.FC = () => {
   return (
     <Layout>
-      <div className={styles.clientsPage}>
+      <div className={styles.portfolioPage}>
         <div className={styles.content}>
           <div className={styles.contentContainer}>
             <div className={styles.projects}>
@@ -33,4 +33,4 @@ const Clients: React.FC = () => {
   )
 }
 
-export default Clients
+export default Portfolio

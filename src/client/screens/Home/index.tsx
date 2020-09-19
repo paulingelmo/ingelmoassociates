@@ -1,6 +1,7 @@
 import React from 'react'
 import cx from 'classnames'
 import Layout from 'components/Layout'
+import Slider from 'components/Slider'
 import TextColumns from 'components/TextColumns'
 import { clientLogos, servicesIcons, servicesItems } from './content'
 import styles from './Home.m.sass'
@@ -20,6 +21,12 @@ const Home: React.FC = () => {
                     range of design and engineering services.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className={styles.portfolio}>
+              <div className={styles.portfolioContainer}>
+                <Slider />
               </div>
             </div>
 

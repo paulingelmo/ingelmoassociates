@@ -1,4 +1,4 @@
-import { Project } from 'screens/Clients'
+import { Project } from 'screens/Portfolio'
 
 export const projectList: Project[] = [
   {
