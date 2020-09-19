@@ -1,0 +1,51 @@
+@import 'sass/variables'
+
+@keyframes scrollLeft
+  0%
+  25%
+  50%
+  75%
+  100%
+    right: calc(var(--itemWidth) + 30px)
+
+.carousel
+  overflow: hidden
+
+.carouselContainer
+
+#carousel
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0px -15px
+
+.carouselItem
+  flex: 0 0 auto
+  position: relative
+  right: 0px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  width: var(--itemWidth)
+  height: var(--itemHeight)
+  margin: 0px 15px
+  border-radius: 3px
+  background-color: $white
+  box-shadow: 0px 5px 20px rgba($black, 0.05)
+  animation: scrollLeft var(--tick) linear infinite
+  animation-play-state: var(--pauseState)
+
+  a::before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+  img
+    max-width: 135px
+    max-height: 50px
+
+  @include tablet
+    width: calc(var(--itemWidth) - 90px)

@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom'
 import Home from 'screens/Home'
-import Portfolio from 'screens/Portfolio'
+import Projects from 'screens/Projects'
 import 'sass/base.sass'
 
 const AppRouter: React.FC = () => {
@@ -16,8 +16,8 @@ const AppRouter: React.FC = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/Portfolio">
-          <Portfolio />
+        <Route path="/projects">
+          <Projects />
         </Route>
         <Redirect to="/" from="*" />
       </Switch>

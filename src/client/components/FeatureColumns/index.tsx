@@ -1,8 +1,8 @@
 import React from 'react'
 import cx from 'classnames'
-import styles from './TextColumns.m.sass'
+import styles from './FeatureColumns.m.sass'
 
-interface TextColumnsProps {
+interface FeatureColumnsProps {
   items: {
     source: string
     description: React.ReactNode
@@ -10,16 +10,16 @@ interface TextColumnsProps {
   inverted?: boolean
 }
 
-const TextColumns: React.FC<TextColumnsProps> = ({
+const FeatureColumns: React.FC<FeatureColumnsProps> = ({
   items,
   inverted = false
 }) => {
   return (
-    <div className={styles.textColumns}>
-      <div className={styles.textColumnsContainer}>
+    <div className={styles.featureColumns}>
+      <div className={styles.featureColumnsContainer}>
         {items.map((item, index) => {
           return index < 3 ? (
-            <div className={styles.textColumn} key={index}>
+            <div className={styles.featureColumn} key={index}>
               <div
                 className={styles.imageBox}
                 style={{
@@ -37,4 +37,4 @@ const TextColumns: React.FC<TextColumnsProps> = ({
   )
 }
 
-export default TextColumns
+export default FeatureColumns

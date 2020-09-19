@@ -1,9 +1,14 @@
 import React from 'react'
 import cx from 'classnames'
 import Layout from 'components/Layout'
-import Slider from 'components/Slider'
-import TextColumns from 'components/TextColumns'
-import { clientLogos, servicesIcons, servicesItems } from './content'
+import Carousel from 'components/Carousel'
+import FeatureColumns from 'components/FeatureColumns'
+import {
+  // carouselItems,
+  clientLogos,
+  servicesIcons,
+  servicesItems
+} from './content'
 import styles from './Home.m.sass'
 
 const Home: React.FC = () => {
@@ -24,11 +29,11 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.portfolio}>
+            {/* <div className={styles.portfolio}>
               <div className={styles.portfolioContainer}>
-                <Slider />
+                <Carousel carouselItems={carouselItems} />
               </div>
-            </div>
+            </div> */}
 
             <div className={styles.clients}>
               <div className={styles.clientsContainer}>
@@ -80,7 +85,7 @@ const Home: React.FC = () => {
                   ))}
                 </div>
                 <div className={styles.servicesList}>
-                  <TextColumns items={servicesItems} />
+                  <FeatureColumns items={servicesItems} />
                 </div>
               </div>
             </div>

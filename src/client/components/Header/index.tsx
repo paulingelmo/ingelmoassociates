@@ -41,8 +41,8 @@ const Header: React.FC = () => {
         <NavLink activeClassName={styles.active} exact to="/">
           Home
         </NavLink>
-        <NavLink activeClassName={styles.active} to="/portfolio">
-          Portfolio
+        <NavLink activeClassName={styles.active} to="/projects">
+          Projects
         </NavLink>
         <button onClick={toggleIsOpen}>Contact Us</button>
       </div>
