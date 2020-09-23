@@ -10,7 +10,7 @@ interface CarouselProps {
   tick?: number
 }
 
-interface CarouselItem {
+export interface CarouselItem {
   name: string
   caption?: string
   source: string
@@ -109,18 +109,20 @@ const Carousel: React.FC<CarouselProps> = ({
           }
         >
           {activeArray.map((item, index) => (
-            <div className={styles.carouselItem} key={index}>
-              {item.link ? (
-                <Link to={item.link}>
-                  <img src={item.source} />
-                </Link>
-              ) : (
-                <img src={item.source} />
-              )}
+            <div
+              className={styles.carouselItem}
+              style={{
+                backgroundImage: item.source ? `url(${item.source})` : 'none'
+              }}
+              key={index}
+            >
+              {item.link ? <Link to={item.link} /> : null}
             </div>
           ))}
         </div>
-        <button onClick={() => toggleIsPaused()}>Pause</button>
+        <button onClick={() => toggleIsPaused()}>
+          {isPaused ? 'Resume' : 'Paused'}
+        </button>
       </div>
     </div>
   )

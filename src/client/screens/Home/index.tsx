@@ -3,13 +3,17 @@ import cx from 'classnames'
 import Layout from 'components/Layout'
 import Carousel from 'components/Carousel'
 import FeatureColumns from 'components/FeatureColumns'
-import {
-  // carouselItems,
-  clientLogos,
-  servicesIcons,
-  servicesItems
-} from './content'
+import { clientLogos, servicesIcons, servicesItems } from './content'
+import { projectList } from '../Projects/content'
 import styles from './Home.m.sass'
+
+const carouselItems = projectList.map((project) => {
+  return {
+    name: project.name,
+    source: project.source,
+    link: `/projects?${project.name}`
+  }
+})
 
 const Home: React.FC = () => {
   return (

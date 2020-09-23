@@ -198,6 +198,54 @@ export const projectList: Project[] = [
       {
         name: 'Starbucks at Doral - 4',
         source: 'images/clients/projects/starbucks-doral/starbucks-doral_4.jpg'
+      },
+      {
+        name: 'Starbucks at Doral - 5',
+        source: 'images/clients/projects/starbucks-doral/starbucks-doral_5.jpg'
+      },
+      {
+        name: 'Starbucks at Doral - 6',
+        source: 'images/clients/projects/starbucks-doral/starbucks-doral_6.jpg'
+      }
+    ]
+  },
+  {
+    name: 'Vizcaya',
+    source: 'images/clients/projects/vizcaya/vizcaya_1.jpg',
+    images: [
+      {
+        name: 'Vizcaya - 1',
+        source: 'images/clients/projects/vizcaya/vizcaya_1.jpg'
+      },
+      {
+        name: 'Vizcaya - 2',
+        source: 'images/clients/projects/vizcaya/vizcaya_2.jpg'
+      },
+      {
+        name: 'Vizcaya - 3',
+        source: 'images/clients/projects/vizcaya/vizcaya_3.jpg'
+      }
+    ]
+  },
+  {
+    name: 'Miami-Dade County - West Miami Fire Station 40',
+    source:
+      'images/clients/projects/miami-dade-fire-station/fire-station_1.jpg',
+    images: [
+      {
+        name: 'West Miami Fire Station 40 - 1',
+        source:
+          'images/clients/projects/miami-dade-fire-station/fire-station_1.jpg'
+      },
+      {
+        name: 'West Miami Fire Station 40 - 2',
+        source:
+          'images/clients/projects/miami-dade-fire-station/fire-station_2.jpg'
+      },
+      {
+        name: 'West Miami Fire Station 40 - 3',
+        source:
+          'images/clients/projects/miami-dade-fire-station/fire-station_3.jpg'
       }
     ]
   }

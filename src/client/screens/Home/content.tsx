@@ -1,14 +1,5 @@
 import React from 'react'
 
-export const carouselItems = [
-  {
-    name: '',
-    caption: '',
-    source: '',
-    link: '/projects'
-  }
-]
-
 export const clientLogos = [
   {
     name: 'Allied Fiber',
